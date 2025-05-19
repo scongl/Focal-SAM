@@ -5,11 +5,17 @@
 This repository is the official code for the paper [Focal-SAM: Focal Sharpness-Aware Minimization for Long-Tailed Classification](https://arxiv.org/abs/2505.01660) (ICML 2025).
 
 
-**Focal-SAM: Focal Sharpness-Aware Minimization for Long-Tailed Classification.**
+**Paper Title: Focal-SAM: Focal Sharpness-Aware Minimization for Long-Tailed Classification.**
 
 **Author: Sicong Li, [Qianqian Xu\*](https://qianqianxu010.github.io/), [Zhiyong Yang](https://joshuaas.github.io/),  [Zitai Wang](https://wang22ti.com/), Linchao Zhang, [Xiaochun Cao](https://scst.sysu.edu.cn/members/1401493.htm), [Qingming Huang\*](https://people.ucas.ac.cn/~qmhuang)**
 
+
+> Abstract: Real-world datasets often follow a long-tailed distribution, making generalization to tail classes difficult. Recent methods resorted to long-tail variants of Sharpness-Aware Minimization (SAM), such as ImbSAM and CC-SAM, to improve generalization by flattening the loss landscape. However, these attempts face a trade-off between computational efficiency and control over the loss landscape. On the one hand, ImbSAM is efficient but offers only coarse control as it excludes head classes from the SAM process. On the other hand,  CC-SAM provides fine-grained control through class-dependent perturbations but at the cost of efficiency due to multiple backpropagations. Seeing this dilemma, we introduce Focal-SAM, which assigns different penalties to class-wise sharpness, achieving fine-grained control without extra backpropagations, thus maintaining efficiency. Furthermore, we theoretically analyze Focal-SAM's generalization ability and derive a sharper generalization bound. Extensive experiments on both traditional and foundation models validate the effectiveness of Focal-SAM.
+
+
 [![key_idea](figs/method.png)](figs/method.png)
+
+
 
 ## Installation
 
